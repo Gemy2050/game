@@ -1,0 +1,166 @@
+:root {
+  --main-color: #2196f3;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+.game {
+  background-color: #eee;
+  height: 100vh;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+.name {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 6px;
+}
+.message span {
+  color: #009688;
+  font-size: bold;
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.start {
+  text-align: center;
+  background-color: #009688;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 10px;
+}
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--main-color);
+  user-select: none;
+}
+.input {
+  margin: 10px auto;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 2px solid var(--main-color);
+  font-size: 20px;
+  color: var(--main-color);
+  text-align: center;
+  text-transform: capitalize;
+  display: none;
+}
+.input:focus {
+  outline: none;
+}
+.upcoming-words {
+  background-color: white;
+  margin: 10px auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: none;
+  /* height: 215px; */
+  overflow: hidden;
+}
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 6px;
+  max-height: 40px;
+}
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.control span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.finish {
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+}
+.finish .good {
+  color: var(--main-color);
+}
+.finish .bad {
+  color: red;
+}
+form {
+  background-color: var(--main-color);
+  color: white;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+form p {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+form > div {
+  margin: 0 15px;
+}
+form > div label {
+  font-size: 20px;
+  margin-left: 5px;
+}
+button {
+  margin: 10px auto;
+  width: 120px;
+  height: 50px;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+  font-size: 18px;
+}
+.average {
+  background-color: var(--main-color);
+  width: fit-content;
+  margin: 15px auto;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 6px;
+  display: none;
+}
+.average p {
+  margin-bottom: 10px;
+}
