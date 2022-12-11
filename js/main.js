@@ -110,6 +110,7 @@ input.onpaste = function () {
   return false;
 };
 
+
 // Start Game
 startButton.onclick = function () {
   this.style.display = "none";
